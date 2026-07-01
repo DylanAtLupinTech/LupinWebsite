@@ -32,8 +32,8 @@
       </div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Halifax hardware help for fast-moving startups</p>
-          <h1>Rapid PCB & Firmware Prototyping for Nova Scotia startups</h1>
+          <p class="eyebrow">Electronics consulting for startups and hardware companies.</p>
+          <h1>Embedded Engineering for Scalable Hardware. From Prototype to Production.</h1>
           <p class="hero-text">Get practical prototype electronics and embedded firmware that helps your hardware move forward quickly. We work with founders on a budget, provide clear timelines, and keep communication open from design through bring-up.</p>
           <div class="hero-actions">
             <a href="#contact" class="button button-primary">Book a Free 15-Minute Consultation</a>
@@ -52,42 +52,62 @@
     <section class="section" id="services">
       <div class="container section-header">
         <p class="eyebrow">What we do</p>
-        <h2>Services built for startups that need working hardware fast.</h2>
+        <h2>Engineering support for every stage of your product.</h2>
       </div>
       <div class="cards-grid">
         <article class="card">
-          <h3>PCB Design</h3>
-          <p>Lean schematic capture and board layout optimized for fast prototype cycles and startups working with limited budgets.</p>
+          <h3>PoC & Rapid Prototyping</h3>
+          <p>For early-stage startups. Rapid breadboarding, quick-turn PCB layout, and firmware 'skeleton' code to get your idea in front of investors or users fast.</p>
         </article>
         <article class="card">
-          <h3>Embedded Firmware</h3>
-          <p>Embedded firmware development for microcontrollers and embedded Linux, built for early-stage products and rapid iteration.</p>
+          <h3>Production Readiness (DFM)</h3>
+          <p>Moving beyond the prototype. We optimize your BOM for cost, refine board layouts for reliability/regulatory compliance, and prepare your design for manufacture.</p>
         </article>
         <article class="card">
-          <h3>System Bring-Up & Testing</h3>
-          <p>Hands-on bring-up, debugging, and validation for prototypes, with clear findings and customer-facing updates at every stage.</p>
+          <h3>Specialized Consulting</h3>
+          <p>Architectural reviews, complex firmware refactoring, debugging, or real-time systems optimization for demanding hardware applications.</p>
         </article>
       </div>
     </section>
 
     <section class="section section-slate" id="pricing">
-      <div class="container pricing-inner">
-        <div class="pricing-copy">
-          <p class="eyebrow">Pricing</p>
-          <h2>Clear engineering rates with honest project expectations.</h2>
-          <p class="pricing-rate"><strong>$35 / hr</strong> for development, debugging, and consultation.</p>
-          <p>We keep the rate transparent and communicate costs clearly throughout the project. Every quote is tailored so startups can make decisions with budget confidence.</p>
-          <p class="small-note">Looking for a budget-friendly prototyping partner? Let’s talk.</p>
-        </div>
-        <div class="pricing-card">
-          <h3>Startup-focused engineering support</h3>
+      <div class="container section-header">
+        <p class="eyebrow">Pricing</p>
+          <h2>Engineering rates scaled to your timeline and project scope.</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>PoC & Rapid Prototyping</h3>
+          <p><strong>Fast turnaround, focused scope.</strong></p>
+          <p>Quick concept validation with minimal overhead. Ideal for proving feasibility before committing to full production design.</p>
           <ul>
-            <li>Fast prototype design cycles</li>
-            <li>Embedded software & hardware alignment</li>
-            <li>Local Nova Scotia delivery and trust</li>
+            <li>2–4 week engagement typical</li>
+            <li>Breadboard through quick PCB iteration</li>
+            <li>Basic firmware skeleton</li>
           </ul>
-          <a href="#contact" class="button button-primary">Get a Quote</a>
-        </div>
+        </article>
+        <article class="card">
+          <h3>Production Readiness (DFM)</h3>
+          <p><strong>Extended timeline, comprehensive scope.</strong></p>
+          <p>Full design optimization for manufacturability, cost, and reliability. Prepares your product for production run.</p>
+          <ul>
+            <li>4–12 week engagement typical</li>
+            <li>BOM optimization & design reviews</li>
+            <li>Regulatory & compliance support</li>
+            <li>Manufacturing coordination</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Specialized Consulting</h3>
+          <p><strong>Custom timeline, deep expertise.</strong></p>
+          <p>Long-term architectural support, complex debugging, or performance optimization for demanding applications.</p>
+          <ul>
+            <li>Custom engagement, ongoing support</li>
+            <li>Architecture reviews & system design</li>
+            <li>Firmware refactoring & optimization</li>
+            <li>Real-time systems & high-reliability work</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -147,7 +167,7 @@
           <h2>Start a project with Nova Scotian engineering.</h2>
           <p>Email us directly at <a href="mailto:dylan@lupintech.ca">dylan@lupintech.ca</a> or drop a quick message below.</p>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" action="mailto:dylan@lupintech.ca" method="post" enctype="text/plain">
           <label>
             Name
             <input type="text" name="name" placeholder="Your name" required />
@@ -157,8 +177,18 @@
             <input type="email" name="email" placeholder="you@example.com" required />
           </label>
           <label>
+            Select Project Stage
+            <select name="projectStage" required>
+              <option value="">Choose an option</option>
+              <option value="poc">PoC / Rapid Prototype</option>
+              <option value="dfm">Production Readiness (DFM)</option>
+              <option value="consulting">Specialized Consulting</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </label>
+          <label>
             Project Brief / Message
-            <textarea name="message" placeholder="Tell us about your hardware idea." rows="5" required></textarea>
+            <textarea name="message" placeholder="Tell us about your hardware idea and which tier fits your current needs." rows="5" required></textarea>
           </label>
           <button type="submit" class="button button-primary">Send Message</button>
         </form>
